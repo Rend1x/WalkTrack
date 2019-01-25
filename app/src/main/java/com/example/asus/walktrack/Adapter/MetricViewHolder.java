@@ -11,7 +11,8 @@ import com.example.asus.walktrack.R;
 public class MetricViewHolder extends RecyclerView.ViewHolder{
 
     TextView walk,aerobic,run,date,all_count_walk,all_metric;
-    LinearLayout goal;
+    LinearLayout goal, color_perc;
+    View color_walk,color_aerobic,color_run;
 
     public MetricViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -23,5 +24,9 @@ public class MetricViewHolder extends RecyclerView.ViewHolder{
         all_count_walk = (TextView) itemView.findViewById(R.id.all_count_walk);
         all_metric = (TextView) itemView.findViewById(R.id.all_count);
         goal = (LinearLayout) itemView.findViewById(R.id.goal);
+        color_perc = (LinearLayout) itemView.findViewById(R.id.color_perc);
+        color_walk = (View) itemView.findViewById(R.id.color_walk);
+        color_aerobic = (View) itemView.findViewById(R.id.color_aerobic);
+        color_run = (View) itemView.findViewById(R.id.color_run);
     }
 }

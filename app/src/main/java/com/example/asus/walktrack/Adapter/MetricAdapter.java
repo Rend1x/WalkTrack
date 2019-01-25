@@ -4,9 +4,11 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.example.asus.walktrack.Model.Metric;
 import com.example.asus.walktrack.R;
@@ -49,6 +51,14 @@ public class MetricAdapter extends RecyclerView.Adapter<MetricViewHolder> {
         holder.run.setText(String.valueOf(metrics.get(pos).run));
         holder.all_count_walk.setText(String.valueOf(allCountWalk));
         holder.all_metric.setText(String.valueOf(allCount));
+
+        LinearLayout.LayoutParams lParams1 = (LinearLayout.LayoutParams) holder.color_walk.getLayoutParams();
+        LinearLayout.LayoutParams lParams2 = (LinearLayout.LayoutParams) holder.color_aerobic.getLayoutParams();
+        LinearLayout.LayoutParams lParams3 = (LinearLayout.LayoutParams) holder.color_run.getLayoutParams();
+
+        lParams1.weight = (metrics.get(pos).walk * 100)/ allCountWalk;
+        lParams2.weight = (metrics.get(pos).aerobic * 100)/ allCountWalk;
+        lParams3.weight = (metrics.get(pos).run * 100)/ allCountWalk;
 
         if (allCountWalk >= allCount){
             holder.goal.setVisibility(View.VISIBLE);

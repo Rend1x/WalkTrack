@@ -31,23 +31,21 @@
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/date"
-                    android:text="15.01.2019"/>
+                    android:textSize="@dimen/date"/>
 
                 <TextView
                     android:id="@+id/all_count_walk"
                     android:layout_width="wrap_content"
                     android:layout_marginRight="@dimen/margin_right"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/all_text"
-                    android:text="3450"/>
+                    android:textSize="@dimen/all_text" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/margin_right"
                     android:textSize="@dimen/all_text"
-                    android:text="/"/>
+                    android:text="@string/splash"/>
 
 
                 <TextView
@@ -55,8 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/margin_right"
-                    android:textSize="@dimen/all_text"
-                    android:text="3450" />
+                    android:textSize="@dimen/all_text" />
 
 
                 <TextView
@@ -69,31 +66,27 @@
 
             <LinearLayout
                 android:id="@+id/color_perc"
-                android:weightSum="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <View
                     android:id="@+id/color_walk"
-                    android:layout_weight="0.33"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="@dimen/line"
                     android:background="@color/light_blue"
                     android:layout_marginRight="@dimen/margin_right"/>
 
                 <View
                     android:id="@+id/color_aerobic"
-                    android:layout_weight="0.33"
-                    android:layout_width="fill_parent"
+                    android:layout_width="0dp"
                     android:layout_height="@dimen/line"
-                    android:background="@color/blue"
-                    android:layout_marginRight="@dimen/margin_right"/>
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:background="@color/blue" />
 
                 <View
                     android:id="@+id/color_run"
-                    android:layout_weight="0.33"
-                    android:layout_width="fill_parent"
+                    android:layout_width="0dp"
                     android:layout_height="@dimen/line"
                     android:background="@color/dark_green"
                     />
@@ -120,8 +113,7 @@
                         android:id="@+id/walk_metric"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="@dimen/number_size"
-                        android:text="660" />
+                        android:textSize="@dimen/number_size" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -142,8 +134,7 @@
                         android:id="@+id/aerobic_metric"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="@dimen/number_size"
-                        android:text="660" />
+                        android:textSize="@dimen/number_size" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -164,8 +155,7 @@
                         android:id="@+id/run_metric"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="@dimen/number_size"
-                        android:text="660" />
+                        android:textSize="@dimen/number_size"/>
 
                     <TextView
                         android:layout_width="wrap_content"
