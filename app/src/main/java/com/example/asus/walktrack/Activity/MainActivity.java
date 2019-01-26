@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 
 import com.example.asus.walktrack.Adapter.MetricAdapter;
 import com.example.asus.walktrack.Model.Metric;
@@ -24,22 +25,36 @@ public class MainActivity extends AppCompatActivity {
     MyAPI myAPI;
     RecyclerView recyclerView;
     CompositeDisposable compositeDisposable = new CompositeDisposable();
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //toolbar
+        initToolbar();
         //api
-        Retrofit retrofit = RetrofitClient.getInstance();
-        myAPI = retrofit.create(MyAPI.class);
-
+        initAPI();
         //recycle
+        initRecycle();
+        getMetricData();
+    }
+
+    private void initRecycle() {
         recyclerView = (RecyclerView) findViewById(R.id.recycle);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+    }
 
-        getMetricData();
+    private void initAPI() {
+        Retrofit retrofit = RetrofitClient.getInstance();
+        myAPI = retrofit.create(MyAPI.class);
+    }
+
+    private void initToolbar() {
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
     }
 
     private void getMetricData() {

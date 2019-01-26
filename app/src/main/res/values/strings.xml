@@ -2,8 +2,11 @@
     <string name="app_name">WalkTrack</string>
     <string name="gone">Gone reached</string>
     <string name="step">steps</string>
+    <string name="step_name">Steps</string>
     <string name="walk">walk</string>
     <string name="aerobic">aerobic</string>
     <string name="run">run</string>
     <string name="splash">/</string>
+    <string name="aim">TODO</string>
+    <string name="plus">TODO</string>
 </resources>
