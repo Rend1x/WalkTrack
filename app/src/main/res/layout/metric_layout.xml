@@ -8,7 +8,7 @@
     <android.support.v7.widget.CardView
         android:layout_marginTop="@dimen/margin_top"
         android:layout_marginBottom="@dimen/margin_bottom"
-        android:background="#fdfdfd"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
@@ -32,14 +32,14 @@
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#6e6e6e"
+                    android:textColor="@color/grey_black"
                     android:textSize="@dimen/date"/>
 
                 <TextView
                     android:id="@+id/all_count_walk"
                     android:layout_width="wrap_content"
                     android:layout_marginRight="@dimen/margin_right"
-                    android:textColor="#6e6e6e"
+                    android:textColor="@color/grey_black"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/all_text" />
 
@@ -48,7 +48,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/margin_right"
                     android:textSize="@dimen/all_text"
-                    android:textColor="#6e6e6e"
+                    android:textColor="@color/grey_black"
                     android:text="@string/splash"/>
 
 
@@ -57,7 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/margin_right"
-                    android:textColor="#6e6e6e"
+                    android:textColor="@color/grey_black"
                     android:textSize="@dimen/all_text" />
 
 
@@ -65,7 +65,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/all_text"
-                    android:textColor="#6e6e6e"
+                    android:textColor="@color/grey_black"
                     android:text="@string/step" />
 
             </LinearLayout>
@@ -119,14 +119,14 @@
                         android:id="@+id/walk_metric"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#6e6e6e"
+                        android:textColor="@color/grey_black"
                         android:textSize="@dimen/number_size" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/text_walk"
-                        android:textColor="#bebebe"
+                        android:textColor="@color/light_grey"
                         android:text="@string/walk" />
 
                 </LinearLayout>
@@ -142,14 +142,14 @@
                         android:id="@+id/aerobic_metric"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#6e6e6e"
+                        android:textColor="@color/grey_black"
                         android:textSize="@dimen/number_size" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/text_walk"
-                        android:textColor="#bebebe"
+                        android:textColor="@color/light_grey"
                         android:text="@string/aerobic" />
 
                 </LinearLayout>
@@ -165,7 +165,7 @@
                         android:id="@+id/run_metric"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#6e6e6e"
+                        android:textColor="@color/grey_black"
                         android:textSize="@dimen/number_size"/>
 
                     <TextView
@@ -173,7 +173,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/text_walk"
 
-                        android:textColor="#bebebe"
+                        android:textColor="@color/light_grey"
                         android:text="@string/run" />
 
                 </LinearLayout>
@@ -204,7 +204,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/gone"
-                        android:textColor="#72a8b7"
+                        android:textColor="@color/blue_dark"
                         android:textSize="@dimen/gone"/>
 
                     <ImageView

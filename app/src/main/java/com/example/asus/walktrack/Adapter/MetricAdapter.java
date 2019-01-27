@@ -39,7 +39,8 @@ public class MetricAdapter extends RecyclerView.Adapter<MetricViewHolder> {
     public void onBindViewHolder(@NonNull MetricViewHolder holder, int pos) {
 
         int allCountWalk = metrics.get(pos).walk + metrics.get(pos).aerobic + metrics.get(pos).run;
-        int allCount = 4000;
+
+        metrics.get(pos).setAllCount(4000);
 
         Date date = new Date(metrics.get(pos).date);
         @SuppressLint("SimpleDateFormat")
@@ -50,7 +51,7 @@ public class MetricAdapter extends RecyclerView.Adapter<MetricViewHolder> {
         holder.aerobic.setText(String.valueOf(metrics.get(pos).aerobic));
         holder.run.setText(String.valueOf(metrics.get(pos).run));
         holder.all_count_walk.setText(String.valueOf(allCountWalk));
-        holder.all_metric.setText(String.valueOf(allCount));
+        holder.all_metric.setText(String.valueOf(metrics.get(pos).getAllCount()));
 
         LinearLayout.LayoutParams lParams1 = (LinearLayout.LayoutParams) holder.color_walk.getLayoutParams();
         LinearLayout.LayoutParams lParams2 = (LinearLayout.LayoutParams) holder.color_aerobic.getLayoutParams();
@@ -60,7 +61,7 @@ public class MetricAdapter extends RecyclerView.Adapter<MetricViewHolder> {
         lParams2.weight = (metrics.get(pos).aerobic * 100)/ allCountWalk;
         lParams3.weight = (metrics.get(pos).run * 100)/ allCountWalk;
 
-        if (allCountWalk >= allCount){
+        if (allCountWalk >= metrics.get(pos).getAllCount()){
             holder.goal.setVisibility(View.VISIBLE);
         }else {
             holder.goal.setVisibility(View.GONE);

@@ -12,4 +12,6 @@
     <dimen name="layout_h">2dp</dimen>
     <dimen name="gone">18sp</dimen>
     <dimen name="end">15dp</dimen>
+    <dimen name="mainSize">28sp</dimen>
+    <dimen name="marginEnd">15dp</dimen>
 </resources>

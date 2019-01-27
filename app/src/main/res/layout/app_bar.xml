@@ -8,7 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:padding="@dimen/margin">
 
         <ImageView
             android:id="@+id/aim_button"
@@ -27,8 +27,8 @@
             android:text="@string/step_name"
             android:textStyle="bold"
             android:layout_centerHorizontal="true"
-            android:textColor="#111"
-            android:textSize="28sp"/>
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainSize"/>
 
         <ImageView
             android:id="@+id/plus_button"
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="15dp"
+            android:layout_marginEnd="@dimen/marginEnd"
             android:contentDescription="@string/plus"
             android:src="@drawable/icon_plus" />
 
